@@ -2,7 +2,9 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 const HeaderSection = ({title}) => (
   <View style={styles.header}>
-    <Text>{title}</Text>
+    <Text style={{
+      color: "#FFF"
+    }}>{title}</Text>
   </View>
 );
 
@@ -14,7 +16,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#236CEA',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 100,
+    height: "10%",
     width:"100%",
   },
 });

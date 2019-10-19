@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    height: "70%",
+    height: "75%",
     padding: 10,
     backgroundColor: "#FAF9EA"
   },
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-around",
     backgroundColor: "#DBFFC8",
-    height: 100,
+    height: "15%",
     width: "100%"
   },
   content: {

@@ -17,6 +17,6 @@ const AppSwitchNavigator = createSwitchNavigator({
   Chat:{screen:chatScreen},
   Login:{screen:loginScreen}
 },
-{initialRouteName: 'Chat'})
+{initialRouteName: 'Login'})
 
 const AppContainer = createAppContainer(AppSwitchNavigator)

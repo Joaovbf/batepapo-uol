@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, TextInput,Button, ScrollView } from 'react-native';
 
-const CardMessage = ({name,message }) => {
+const CardMessage = ({name,message, from }) => {
     return (
       <View style={styles.messageBox}>
         <Text style={styles.nameText}>{name}:</Text>

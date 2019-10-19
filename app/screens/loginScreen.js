@@ -14,10 +14,10 @@ export default class loginScreen extends Component {
       <View style={styles.container}>
         <HeaderSection title="Login" />
         <View style={styles.form}>
-          <Text>Email</Text>
-          <TextInput style={styles.input} placeholder={"Digite seu email"} />
+          <Text>Nome</Text>
+          <TextInput style={styles.input} placeholder={"Digite seu nome"} />
           <Text>Senha</Text>
-          <TextInput style={styles.input} placeholder={"Digite seu email"} />
+          <TextInput style={styles.input} placeholder={"Digite seu senha"} />
           <Button
             title="Entrar"
             style={{ width: "100%" }}
