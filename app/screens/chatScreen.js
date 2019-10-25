@@ -87,7 +87,8 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     backgroundColor: "#fff",
-    flexDirection: "column"
+    flexDirection: "column",
+    height: "100%"
   },
   input: {
     width: "60%",

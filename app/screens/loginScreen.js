@@ -11,7 +11,8 @@ export default class loginScreen extends Component {
     super(props);
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      isHidden: true
     };
   }
 
@@ -24,16 +25,11 @@ export default class loginScreen extends Component {
       alert("Preencha o campo de senha abaixo.")
       return
     }
-    try {
-      FirebaseInit.auth().signInWithEmailAndPassword(email, password)
-      .then(()=>{
-        this.props.navigation.navigate('Chat')
-        alert("Login aceito, você vai ser redirecionado")
-      })
-    } catch (error) 
-    {
-      alert(error.toString(error));
-    }
+    FirebaseInit.auth().signInWithEmailAndPassword(email, password)
+    .then(()=>{
+      this.props.navigation.navigate('Chat')
+      alert("Login aceito, você vai ser redirecionado")
+    }).catch(function(error){alert("Ops:", error.toString(error))})
   }
 
   render() {
@@ -58,6 +54,10 @@ export default class loginScreen extends Component {
             style={{ width: "100%" }}
             onPress={() => this.login(this.state.email, this.state.password)}
           ></Button>
+          <Button
+            title="Não tenho login"
+            onPress={() => this.props.navigation.navigate('Register')}
+          />
         </View>
       </View>
     );
